@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400&family=Ubuntu:wght@300;400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>divyasoup</title>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+
+    <script src="dist/js/lightbox-plus-jquery.js"></script>
+    <script>
+        lightbox.option({
+            'resizeDuration': 200,
+            'wrapAround': true,
+            'maxWidth': 500
+        })
+    </script>
+</head>
+
+<body id="home">
+
+    <a href="#main" id="skip">Skip to Main Content</a>
+
+    <header>
+        <a href="index.html">
+            <h1>divyasoup</h1>
+        </a>
+    </header>
+
+    <!--Navigation-->
+    <div class="topnav" id="myTopnav">
+        <a href="index.html" class="active">Art</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="javascript:void(0);" class="icon" aria-label="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i></a>
+    </div>
+
+    <main id="main">
+
+        <h1>Art</h1>
+
+        <div class="gallery">
+            <div>
+                <a href="art/portrait.html">
+                    <img src="images/divya portrait.jpg" alt="Self-portrait of artist" width="400px">
+                    <h2>Ghost</h2>
+                    <p>Oil on Canvas, 24 inches by 36 inches</p>
+                </a>
+            </div>
+
+            <div>
+                <a href="art/coraline.html">
+                    <img src="images/coraline.JPG" alt="Fanart of Coraline" width="400px">
+                    <h2>Coraline</h2>
+                    <p>Digital Drawing, 3000 pixels by 3000 pixeles</p>
+                </a>
+            </div>
+
+            <div>
+                <a href="art/jugwithpears.html">
+                    <img src="images/painting final.jpg" alt="Oil painting of still life" width="400px">
+                    <h2>Jug with Pears</h2>
+                    <p>Oil painting, 16 inches by 24 inches</p>
+                </a>
+            </div>
+
+            <div>
+                <a href="art/passingtime.html">
+                    <img src="images/Shankar_Stage1.jpg" alt="Three canvas paintings of artist sitting on the bus"
+                        width="400px">
+                    <h2>Passing Time</h2>
+                    <p>Figures on a Bus</p>
+                </a>
+            </div>
+
+            <div>
+                <a href="art/figures.html">
+                    <img src="images/fig.jpg" alt="Watercolor figure paintings" width="400px">
+                    <h2>Figures</h2>
+                    <p>Figure paintings in Watercolor</p>
+                </a>
+            </div>
+        </div>
+
+
+    </main>
+
+
+
+</body>
+
+</html>

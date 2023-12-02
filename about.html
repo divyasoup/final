@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400&family=Ubuntu:wght@300;400&display=swap"
+        rel="stylesheet">
+    <title>divyasoup</title>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+
+    <script src="dist/js/lightbox-plus-jquery.js"></script>
+    <script>
+        lightbox.option({
+            'resizeDuration': 200,
+            'wrapAround': true,
+            'maxWidth': 500
+        })
+    </script>
+    
+</head>
+
+<body id="about">
+
+    <a href="#main" id="skip">Skip to Main Content</a>
+
+    <header>
+        <a href="index.html">
+            <h1>divyasoup</h1>
+        </a>
+    </header>
+
+        <!--Navigation-->
+        <div class="topnav" id="myTopnav">
+            <a href="index.html">Art</a>
+            <a href="about.html" class="active">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="javascript:void(0);" class="icon" aria-label="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+              </a>
+        </div>
+
+
+    <main id="main" class="about">
+        <h1>About</h1>
+        <div class="aboutpage">
+            <img src="images/divya.jpg" alt="Photo of the Artist" width="400px">
+            <div>
+                <h2>Divya Shankar</h2>
+                <p>Divya Shankar is currently a senior at the University of Michigain. She is majoring in Art and Design the University's Stamps school of Art and Design and minoring in UX Design at the University's School of Information. </p>
+                <p>As a senior, Divya is currently looking for internships/work. She is prolific in painting and has a strong understand of design. Divya likes to play with her cats and bake in her free time.</p>
+            </div>
+        </div>
+        
+
+
+
+    </main>
+
+
+
+</body>
+
+</html>

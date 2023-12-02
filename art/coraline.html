@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../dist/css/lightbox.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;1,300;1,400&family=Ubuntu:ital,wght@0,300;0,400;1,300;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>divyasoup</title>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+
+    <script src="dist/js/lightbox-plus-jquery.js"></script>
+    <script>
+        lightbox.option({
+            'resizeDuration': 200,
+            'wrapAround': true,
+            'maxWidth': 500
+        })
+    </script>
+
+</head>
+
+<body id="home">
+
+    <a href="#main" id="skip">Skip to Main Content</a>
+
+    <header>
+        <a href="../index.html">
+            <h1>divyasoup</h1>
+        </a>
+    </header>
+
+    <!--Navigation-->
+    <div class="topnav" id="myTopnav">
+        <a href="../index.html" class="active">Art</a>
+        <a href="../about.html">About</a>
+        <a href="../contact.html">Contact</a>
+        <a href="javascript:void(0);" class="icon" aria-label="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i></a>
+    </div>
+
+    <main id="main">
+        <div class="center">
+            <h1>Coraline</h1>
+            <a href="../images/coraline.JPG" target="_blank" data-lightbox="portrait" data-="Coraline">
+                <img src="../images/coraline.JPG" alt="Fanart of Coraline" width="400px">
+            </a>
+            <h2>Coraline</h2>
+            <p><span class="italic-word">2020. Oil on Canvas, 24 inches by 36 inches.</span></p>
+            <p><span class="italic-word">Coraline</span> is a piece of fanwork of Neil Gaiman's book of the same name. This artwork takes inspiration from the movie, which utlized stop-motion animation for it's production. </p>
+        </div>
+    </main>
+
+</body>
+
+</html>
